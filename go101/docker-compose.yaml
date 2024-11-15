@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    container_name: go-101
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - go-101
+    volumes:
+      - ./src:/go/src
+
+networks:
+  go-101:
+    driver: bridge
