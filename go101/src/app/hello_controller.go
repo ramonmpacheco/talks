@@ -14,5 +14,5 @@ func NewHelloController() *helloController {
 
 func (g *helloController) greetings(w http.ResponseWriter, r *http.Request) {
 	render.Status(r, http.StatusOK)
-	render.JSON(w, r, "Hello Tinnova talks!!!")
+	render.JSON(w, r, "Hello Talks!!!")
 }

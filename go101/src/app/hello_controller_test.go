@@ -18,5 +18,5 @@ func TestHello_greetings(t *testing.T) {
 	app.InitRoutes().ServeHTTP(resp, req)
 
 	assert.EqualValues(t, http.StatusOK, resp.Code)
-	assert.Contains(t, resp.Body.String(), "Hello Tinnova talks!!!")
+	assert.Contains(t, resp.Body.String(), "Hello Talks!!!")
 }
