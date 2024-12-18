@@ -16,7 +16,7 @@ func InitRoutes() *chi.Mux {
 	r.Route("/", func(r chi.Router) {
 		r.Get("/", rootController.root)
 		r.Get("/hello", helloController.greetings)
-		r.Get("/counter", counterController.count)
+		r.Get("/count", counterController.count)
 	})
 
 	return r

@@ -13,3 +13,9 @@
 
 ### PARA EXECUTAR O PROJETO NO VIA TERMINAL
 ```# go run main.go```
+
+### PARA EXECUTAR TODOS OS TESTES
+~~~shell
+# Dentro da past src
+$ go test ./... -v
+~~~
